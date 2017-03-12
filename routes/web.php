@@ -18,3 +18,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+Route::get('/verify', 'VerifyController@show')->name('verify');
+Route::post('/verify', 'VerifyController@verify')->name('verify');
